@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Acesso</title>
+    <meta name="Site de COntrole de Acesso Nusa" content="">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="" alt="">
+        </div>
+        <div>
+            <a href=""><img src="" alt=""></a>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="text-center">
+                <h1>Controle de Acesso</h1>
+            </div>
+            <div class="vh-75 d-flex justify-content-center">
+                <form action="" class="row">
+                    <div class="col">
+                        <label for="user_id" class="form-label">ID de Acesso</label>
+                        <input type="number" name="user_id" id="user_id" class="form-control">
+                    </div>
+                    <div class="col">
+                        <label for="password_user" class="form-label">Senha de Acesso</label>
+                        <input type="password" name="password_user" id="password_user" class="form-control">
+                    </div>
+                    <button type="submit" onclick="validar(event)" class="btn btn-primary mt-3">Enviar</button>
+                </form>
+            </div>
+            <div class="row mt-5 d-flex justify-content-center gap-5">
+                <div class="card" style="width: 18rem;">
+                    <img src="imgs/35337_PIA14126_SAF_MSL_20110512.jpg" class="card-img-top p-2" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Laboratorio</h5>
+                        <button href="https://www.nasa.gov/" class="btn btn-primary" id="class_lab" disabled>Entrar</button>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="imgs/trajes.jpg" class="card-img-top p-2" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Astronauta</h5>
+                        <button href="https://www.nasa.gov/" class="btn btn-primary" id="class_traje" disabled>Entrar</button>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="imgs/foguete.webp" class="card-img-top p-2" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Foguete</h5>
+                        <button href="https://www.nasa.gov/" class="btn btn-primary" id="class_rocket" disabled>Entrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</html>

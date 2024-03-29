@@ -1,0 +1,19 @@
+{
+  "user": [
+    {
+      "id": 1,
+      "senha": 1234,
+      "cargo": "cientista"
+    },
+    {
+      "id": 2,
+      "senha": 1234,
+      "cargo": "tecnico"
+    },
+    {
+      "id": 3,
+      "senha": 1234,
+      "cargo": "astronauta"
+    }
+  ]
+}
