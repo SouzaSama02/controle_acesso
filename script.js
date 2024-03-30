@@ -13,19 +13,27 @@ function validar(event) {
       let userFound = false; // definidindo usuario como não encontrado para futuramente realizar a confirmação caso encontrado
       data.user.forEach((user) => {
         // realizando a analise por cada usuario da array apresentada pelo response.json
-        if (login == user.id) {
-          //verificando usuario apresentasse no json
-          if (password == user.senha) {
-            //verificando se a senha do usuario condiz com o id encontrado no json
-            console.log("Ok");
-            userFound = true;
-            if (user.cargo == "cientista") {
-              lab.removeAttribute("disabled");
-            } else if (user.cargo == "tecnico") {
-              traje.removeAttribute("disabled");
-            } else {
-              rocket.removeAttribute("disabled");
-            }
+        if (login == user.id && password == user.senha) {
+          console.log("Ok");
+          userFound = true;
+          if (user.cargo == "cientista") {
+            // adicionar um evento ao ser realizado um click no botão, ao qual o usuario será adicionado para um site
+            lab.addEventListener(
+              "click",
+              () => (window.location.href = "https://www.nasa.gov/")
+            );
+          } else if (user.cargo == "tecnico") {
+            // adicionar um evento ao ser realizado um click no botão, ao qual o usuario será adicionado para um site
+            traje.addEventListener(
+              "click",
+              () => (window.location.href = "https://www.nasa.gov/")
+            );
+          } else {
+            // adicionar um evento ao ser realizado um click no botão, ao qual o usuario será adicionado para um site
+            rocket.addEventListener(
+              "click",
+              () => (window.location.href = "https://www.nasa.gov/")
+            );
           }
         }
       });
