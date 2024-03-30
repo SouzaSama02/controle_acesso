@@ -17,23 +17,23 @@ function validar(event) {
           console.log("Ok");
           userFound = true;
           if (user.cargo == "cientista") {
+            lab.classList.replace("bg-danger", "bg-success");
             // adicionar um evento ao ser realizado um click no botão, ao qual o usuario será adicionado para um site
-            lab.addEventListener(
-              "click",
-              () => (window.location.href = "https://www.nasa.gov/")
-            );
+            lab.addEventListener("click", () => {
+              alert("Acesso Autorizado ao Laboratorio!");
+            });
           } else if (user.cargo == "tecnico") {
+            rocket.classList.replace("bg-danger", "bg-success");
             // adicionar um evento ao ser realizado um click no botão, ao qual o usuario será adicionado para um site
-            traje.addEventListener(
-              "click",
-              () => (window.location.href = "https://www.nasa.gov/")
-            );
+            rocket.addEventListener("click", () => {
+              alert("Acesso Autorizado a Sala de Manuntenção!");
+            });
           } else {
+            traje.classList.replace("bg-danger", "bg-success");
             // adicionar um evento ao ser realizado um click no botão, ao qual o usuario será adicionado para um site
-            rocket.addEventListener(
-              "click",
-              () => (window.location.href = "https://www.nasa.gov/")
-            );
+            traje.addEventListener("click", () => {
+              alert("Acesso Autorizado a sala de Trajes!");
+            });
           }
         }
       });
